@@ -17,7 +17,7 @@ const UserDetails = () => {
   };
 
   useEffect(() => {
-    axios.get(`https://chitfor.herokuapp.com/management/member/addedBy/1`).then(res => {
+    axios.get(`https://pathuri.herokuapp.com/management/member/addedBy/1`).then(res => {
       console.log(res.data.data)
       setAllData(res.data.data);
     }).catch(err => {
