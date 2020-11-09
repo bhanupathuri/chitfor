@@ -17,7 +17,7 @@ const SchemeDetails = () => {
   };
 
   useEffect(() => {
-    axios.get(`https://pathuri.herokuapp.com/management/scheme/addedBy/1`).then(res => {
+    axios.get(`https://pathuri.herokuapp.com/management/scheme/schemeid/1`).then(res => {
       console.log(res.data.data)
       setAllData(res.data.data);
     }).catch(err => {
